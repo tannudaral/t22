@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taarangana video</title>
+    <link rel="stylesheet" href="vid.css">
+</head>
+<body>
+    
+    <section class="showcase">
+        <header>
+          <h2 class="logo">Cultural Fest</h2>
+          <div class="toggle" id="toggle1"></div>
+        </header>
+        <!-- <video src="video.mp4" muted loop autoplay></video> -->
+        <video src="Untitled.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>TAARANGANA'22</h2> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <a href="#" onclick="toggle();">Watch Trailer</a>
+        </div>
+        <div class="trailer">
+          <video src="college.mp4" controls="true"></video>
+
+          <img src="close.png" class="close" onclick="toggle();" alt="">
+
+        </div>
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Timeline</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+      function toggle(){
+        var trailer = document.querySelector(".trailer")
+        trailer.classList.toggle("active")
+        video.pause()
+        video.currentTime = 0
+      }
+      </script>
+      <script src="vid.js"></script>
+</body>
+</html>
